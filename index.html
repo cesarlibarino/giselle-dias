@@ -6,7 +6,7 @@
   <title>Giselle Dias | Nutrição Estratégica Premium</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <script>
     tailwind.config = {
       theme: {
@@ -14,12 +14,13 @@
           fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
           colors: {
             giselle: {
-              bg: '#090d10', /* Dark Slate Luxo */
-              card: '#13191e', /* Card sofisticado */
-              accent: '#e2b4bd', /* Rose Gold / Nude Premium */
-              accentHover: '#cf9ea7',
-              lightText: '#f8fafc',
-              muted: '#94a3b8'
+              bg: '#120a06', /* Grená Muito Escuro / Preto Café Luxo */
+              card: '#1d110a', /* Marrom Café complementar */
+              accent: '#b88d6c', /* Caramelo Champagne Profundo */
+              gold: '#a37c5a', /* Ouro Velho Escovado (CTAs) */
+              goldHover: '#8a6649',
+              lightText: '#fdfcf9', /* Off-White Quente */
+              muted: '#a19c96' /* Cinza Nude Muted */
             }
           }
         }
@@ -29,17 +30,17 @@
   <style>
     .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
     .reveal.active { opacity: 1; transform: translateY(0); }
-    .text-gradient { background: linear-gradient(to right, #e2b4bd, #ebdcb9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .text-gradient { background: linear-gradient(to right, #b88d6c, #ebdcb9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   </style>
 </head>
-<body class="bg-giselle-bg text-white font-sans antialiased selection:bg-giselle-accent selection:text-giselle-bg">
+<body class="bg-giselle-bg text-white font-sans antialiased selection:bg-giselle-gold selection:text-giselle-bg">
 
   <header class="fixed top-0 w-full z-50 bg-giselle-bg/90 backdrop-blur-md border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 sm:px-12 h-24 flex items-center justify-between">
       <div class="text-xl sm:text-2xl font-extrabold uppercase tracking-tight">
         Giselle Dias <span class="text-giselle-accent text-xs sm:text-sm block font-semibold tracking-wider normal-case">Nutrição Estratégica ®</span>
       </div>
-      <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="bg-giselle-accent hover:bg-giselle-accentHover text-giselle-bg text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded tracking-wider transition-all duration-300 transform hover:scale-105 active:scale-95">
+      <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="bg-giselle-gold hover:bg-giselle-goldHover text-giselle-bg text-xs sm:text-sm font-bold uppercase px-6 py-3 rounded tracking-wider transition-all duration-300 transform hover:scale-105 active:scale-95">
         Agendar Consulta
       </a>
     </div>
@@ -62,7 +63,7 @@
         </p>
         
         <div class="mb-8 lg:mb-0">
-          <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto gap-4 bg-giselle-accent hover:bg-giselle-accentHover text-giselle-bg font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded shadow-2xl shadow-giselle-accent/20 transition-all duration-300 transform hover:-translate-y-1">
+          <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="inline-flex items-center justify-center w-full sm:w-auto gap-4 bg-giselle-gold hover:bg-giselle-goldHover text-giselle-bg font-bold uppercase text-sm sm:text-base tracking-widest px-10 py-5 rounded shadow-2xl shadow-giselle-gold/20 transition-all duration-300 transform hover:-translate-y-1">
             <i data-lucide="sparkles" class="w-6 h-6"></i> Construir Minha Melhor Versão
           </a>
         </div>
@@ -82,7 +83,7 @@
     </div>
   </section>
 
-  <section class="py-32 px-6 bg-[#06090c] border-y border-white/5">
+  <section class="py-32 px-6 bg-[#0e0805] border-y border-white/5">
     <div class="max-w-6xl mx-auto text-center">
       <div class="reveal max-w-3xl mx-auto mb-20">
         <h2 class="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight mb-6">
@@ -94,7 +95,7 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-accent/30 transition-all">
+        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-gold/30 transition-all">
           <div class="w-12 h-12 rounded-lg bg-giselle-accent/10 text-giselle-accent flex items-center justify-center mb-6">
             <i data-lucide="utensils-cross" class="w-6 h-6"></i>
           </div>
@@ -102,7 +103,7 @@
           <p class="text-gray-400">Achar que para emagrecer precisa viver de frango e alface. Cortar tudo o que você gosta sabota seu emocional e quebra a sua consistência.</p>
         </div>
 
-        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-accent/30 transition-all">
+        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-gold/30 transition-all">
           <div class="w-12 h-12 rounded-lg bg-giselle-accent/10 text-giselle-accent flex items-center justify-center mb-6">
             <i data-lucide="trending-down" class="w-6 h-6"></i>
           </div>
@@ -110,7 +111,7 @@
           <p class="text-gray-400">Dietas drásticas fazem seu corpo gastar menos energia para se proteger. Resultado: você come pouco e o ponteiro da balança não desce.</p>
         </div>
 
-        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-accent/30 transition-all">
+        <div class="reveal bg-giselle-card p-10 rounded-xl border border-white/5 group hover:border-giselle-gold/30 transition-all">
           <div class="w-12 h-12 rounded-lg bg-giselle-accent/10 text-giselle-accent flex items-center justify-center mb-6">
             <i data-lucide="frown" class="w-6 h-6"></i>
           </div>
@@ -125,19 +126,19 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
       
       <div class="reveal order-2 md:order-1 bg-gradient-to-br from-giselle-card to-giselle-bg p-12 rounded-2xl border border-white/10 relative overflow-hidden">
-        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-giselle-accent/5 rounded-full blur-3xl"></div>
+        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-giselle-gold/5 rounded-full blur-3xl"></div>
         <h4 class="text-2xl font-extrabold uppercase mb-6 text-giselle-accent">O Método Giselle Dias</h4>
         <ul class="space-y-6">
           <li class="flex items-start gap-4">
-            <div class="mt-1 bg-giselle-accent rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
+            <div class="mt-1 bg-giselle-gold rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
             <p class="text-gray-300"><strong>Nutrição Sem Proibições:</strong> Alimentos que você gosta distribuídos de forma estratégica para manter o emagrecimento ativo.</p>
           </li>
           <li class="flex items-start gap-4">
-            <div class="mt-1 bg-giselle-accent rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
+            <div class="mt-1 bg-giselle-gold rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
             <p class="text-gray-300"><strong>Protocolo Individualizado:</strong> Planejamento estruturado única e exclusivamente para a sua rotina, horários e metas de saúde.</p>
           </li>
           <li class="flex items-start gap-4">
-            <div class="mt-1 bg-giselle-accent rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
+            <div class="mt-1 bg-giselle-gold rounded-full p-1"><i data-lucide="check" class="w-4 h-4 text-giselle-bg"></i></div>
             <p class="text-gray-300"><strong>Suporte Premium:</strong> Atendimento próximo (Presencial ou Consultoria Online) focado em monitorar e acelerar sua evolução biológica.</p>
           </li>
         </ul>
@@ -154,7 +155,7 @@
         </div>
         
         <div class="reveal flex gap-6 items-start">
-          <div class="w-14 h-14 rounded-full bg-giselle-accent/10 text-giselle-accent flex items-center justify-center shrink-0">
+          <div class="w-14 h-14 rounded-full bg-giselle-gold/10 text-giselle-gold flex items-center justify-center shrink-0">
             <i data-lucide="heart" class="w-6 h-6"></i>
           </div>
           <div>
@@ -166,21 +167,21 @@
     </div>
   </section>
 
-  <section class="py-32 px-6 bg-gradient-to-b from-[#090d10] to-giselle-bg text-center border-t border-white/5">
+  <section class="py-32 px-6 bg-gradient-to-b from-[#120a06] to-giselle-bg text-center border-t border-white/5">
     <div class="reveal max-w-4xl mx-auto">
       <h2 class="text-4xl sm:text-6xl font-extrabold uppercase tracking-tighter mb-8 leading-tight">
-        Chegou a hora de mudar <span class="text-giselle-accent">com inteligência.</span>
+        Chega de mudar <span class="text-giselle-accent">com inteligência.</span>
       </h2>
       <p class="text-gray-400 text-lg sm:text-xl mb-12 leading-relaxed">
         Diga adeus ao efeito sanfona e comece um acompanhamento nutricional de alto padrão feito sob medida para o seu estilo de vida.
       </p>
 
       <div class="flex flex-col items-center gap-6">
-        <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="inline-flex items-center gap-4 bg-giselle-accent hover:bg-giselle-accentHover text-giselle-bg font-bold uppercase text-sm sm:text-lg tracking-widest px-12 py-6 rounded shadow-2xl shadow-giselle-accent/30 transition-all duration-300 transform hover:-translate-y-1">
+        <a href="https://api.whatsapp.com/send/?phone=5516991571380&text&type=phone_number&app_absent=0" target="_blank" class="inline-flex items-center gap-4 bg-giselle-gold hover:bg-giselle-goldHover text-giselle-bg font-bold uppercase text-sm sm:text-lg tracking-widest px-12 py-6 rounded shadow-2xl shadow-giselle-gold/30 transition-all duration-300 transform hover:-translate-y-1">
           <i data-lucide="calendar" class="w-6 h-6"></i> Agendar Consulta no WhatsApp
         </a>
-        <div class="flex items-center gap-2 text-giselle-accent text-xs uppercase tracking-widest font-bold">
-          <span class="w-2 h-2 bg-giselle-accent rounded-full animate-ping"></span>
+        <div class="flex items-center gap-2 text-giselle-gold text-xs uppercase tracking-widest font-bold">
+          <span class="w-2 h-2 bg-giselle-gold rounded-full animate-ping"></span>
           Atendimento Exclusivo Presencial & Online Mundo
         </div>
       </div>
